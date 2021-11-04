@@ -1,15 +1,24 @@
-# Basic Sample Hardhat Project
+# Creation steps
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+```console
+mkdir contracts && cd contracts
 
-Try running some of the following tasks:
+npm init
+npm install --save-dev hardhat
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
+npx hardhat
+```
+
+## Useful commands
+
+### Running a local node:
+
+```console
 npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+```
+
+### Deploying sample contract to local network
+
+```console
+npx hardhat run scripts/sample-script.js --network localhost
 ```
